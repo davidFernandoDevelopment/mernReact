@@ -3,7 +3,7 @@ const ambiente = process.env.NODE_ENV || "development";
 const configuracionBase = {
   jwt: {},
   ambiente: ambiente,
-  port: process.env.PORT,
+  port: process.env.port,
 };
 
 let configuracionAmbiente;
