@@ -52,9 +52,10 @@ if (config.ambiente === "production") {
   app.use(erroresDesarrollo);
 }
 
+const port = config.port || 4000;
 //LEVANTANDO EL SERVIDOR
-const server = app.listen(config.port, "0.0.0.0", () => {
-  console.log(`Corriendo en el puerto ${config.port}`);
+const server = app.listen(port, "0.0.0.0", () => {
+  console.log(`Corriendo en el puerto ${port}`);
 });
 
 module.exports = {
