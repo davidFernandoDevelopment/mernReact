@@ -53,7 +53,7 @@ if (config.ambiente === "production") {
 }
 
 //LEVANTANDO EL SERVIDOR
-const server = app.listen(config.port, () => {
+const server = app.listen(config.port, "0.0.0.0", () => {
   console.log(`Corriendo en el puerto ${config.port}`);
 });
 
